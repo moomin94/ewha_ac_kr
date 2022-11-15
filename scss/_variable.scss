@@ -1,24 +1,36 @@
-@mixin download-btns {
-    margin: 6px 0 0 10px;
-    height: 47px;
-    &:nth-child(1){
-        width: 176px;
-        background: url('../assets/pc-ver.png') no-repeat center / cover;
-    }
-    &:nth-child(2){
-        width: 152px;
-        background: url('../assets/ko_appstore.svg') no-repeat center / cover;
-    }
-    &:nth-child(3){
-        width: 159px;
-        background: url('../assets/ko_googleplay.svg') no-repeat center / cover;
-    }
+$main-color: #045738;
+$point-color: #e82f68;
+$dark-color: #222d29;
+$btn-border: 1px solid #333;
+$grey-border: 1px solid rgba(255, 255, 255, 0.3);
+$light-border: 1px solid #e1e1e1;
+$quick-btn-shadow: 2px 2px 5px 0;
+$quick-btn-hover: 0 8px 16px rgb(0 0 0 / 30%);
+
+@mixin menu-before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: -8px;
+    width: 21px;
+    height: 18px;
+    background: url(/_res/ewha/img/common/ico-gnb-pop.png) no-repeat center center;
 }
 
-@mixin h3 {
-    font-family: 'GongGothicMedium';
-    font-size: 80px;
-    font-weight: 900;
-    color: #000000;
-    z-index: 1;    
+@mixin menu-current-before {
+    display: block;
+    background-image: url(/_res/ewha/img/common/ico-gnb-hover.png);
+}
+
+@mixin mini-more-after($bottom, $width, $bgColor) {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: $bottom;
+    right: -1px;
+    width: $width;
+    height: 1px;
+    background: $bgColor;
+    transform: rotate(45deg);
 }
