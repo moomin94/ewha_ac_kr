@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", function(){
   const quickCloseBtn = document.querySelectorAll('.btn-quick-close');
   const goBtn = document.querySelectorAll('.go-btn p');
   const quickBtn = document.querySelector('.quick-btn');
+  const headerBottom = document.querySelector('.header-bottom');
+  const aTag = document.querySelectorAll('a');
+
+  aTag.forEach(function(item){
+    item.addEventListener('click', function(e){
+      e.preventDefault();
+    });
+  });
+
 
   // window.scrollY 에 따라 quick btn show/hide
   window.addEventListener('scroll', function(){
@@ -15,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function(){
       quickBtn.classList.add('on');
     }else {
       quickBtn.classList.remove('on');
+    }
+    if(this.scrollY > 156) {
+      headerBottom.classList.add('on');
+    }else{
+      headerBottom.classList.remove('on');
     }
   })
 
@@ -48,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   });
   
+  // event area toggle class
   eventLi.forEach(function(item){
     item.addEventListener('mouseover', function(){
       eventLi.forEach(function(item){
