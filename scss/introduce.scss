@@ -1,0 +1,41 @@
+@import '_sub-common';
+
+.sub-content-wrap {
+    width: 100%;
+    padding: 0 0 110px 0;
+    .inner {
+        flex-direction: column;
+    }
+    .img-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 45px;
+        >div {
+            width: 50%;
+            height: 471px;
+        }
+        .right {
+            img {
+                display: inline-block;
+                padding: 120px 0 0 38px;
+            }
+        }
+    }
+    .text-wrap {
+        p {
+            font-size: 17px;
+            line-height: 25px;
+            color: #222;
+            margin: 0 0 32px 0;
+        }
+        .sign-box {
+            float: right;
+            span {
+                font-size: 14px;
+                line-height: 19px;
+                padding: 0 0 10px 0;
+            }
+        }
+    }
+}

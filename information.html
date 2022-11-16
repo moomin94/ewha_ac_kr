@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>이화여자대학교</title>
+  <title>이화여자대학교 | 입학안내 | 대학 입학</title>
   <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
@@ -21,18 +20,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="./scss/information.css">
   <script src="./js/common.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/sub.js"></script>
 </head>
-
 <body>
   <div class="wrap">
-    <div class="side-btn">
-      <div class="quick-btn"></div>
-      <div class="chat-wrap"></div>
-    </div>
-
     <header class="header">
       <div class="header-top">
         <div class="inner">
@@ -53,37 +46,15 @@
           </div>
         </div>
       </div>
-      <div class="header-middle">
+      <div class="header-bottom">
         <div class="inner">
-          <div class="search-wrap">
-            <form>
-              <input type="text" placeholder="Search keywords">
-              <button type="submit"><img src="./assets/img/search-icon-1.png" alt="search icon"></button>
-            </form>
-          </div>
           <div class="logo-wrap">
             <img src="./assets/img/logo-img.png" alt="logo image">
           </div>
-          <div class="login-wrap">
-            <ul>
-              <li><a href="#">
-                  <span>로그인</span>
-                  <img src="./assets/img/login-icon.png" alt="login icon">
-                </a></li>
-              <li><a href="#">
-                  <span>English</span>
-                  <img src="./assets/img/lang-icon.png" alt="language icon">
-                </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="header-bottom">
-        <div class="inner">
           <nav>
             <ul class="main-menu">
               <li>
-                <a href="#" class="current">이화소개</a>
+                <a href="#">이화소개</a>
                 <div class="sub-menu">
                   <ul>
                     <li>
@@ -164,7 +135,7 @@
                 </div>
               </li>
               <li>
-                <a href="#">입학안내</a>
+                <a href="#" class="current">입학안내</a>
                 <div class="sub-menu">
                   <ul>
                     <li>
@@ -448,427 +419,172 @@
               </li>
             </ul>
           </nav>
+          <div class="util-wrap">
+            <ul>
+              <li>
+                <a href="#">
+                  <span>로그인</span>
+                  <img src="./assets/img/login-icon.png" alt="login icon">
+                </a>
+              </li>
+            </ul>
+            <div class="search-wrap">
+              <form>
+                <input type="text" placeholder="Search keywords">
+                <button type="submit"><img src="./assets/img/search-icon-1.png" alt="search icon"></button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <div class="main-wrap">
-        <div class="main-img img1" id="last-clone">
-          <img src="./assets/img/main-img-1.jpg" alt="main image">
-        </div>
-        <div class="main-img img2">
-          <img src="./assets/img/main-img-2.jpg" alt="main image">
-        </div>
-        <div class="main-img img3">
-          <img src="./assets/img/main-img-1.jpg" alt="main image">
-        </div>
-        <div class="main-img img4" id="first-clone">
-          <img src="./assets/img/main-img-2.jpg" alt="main image">
-        </div>
-      </div>
-      <div class="btn-wrap">
-        <div class="prev btn"></div>
-        <div class="next btn"></div>
-      </div>
-      <div class="pagination">
-        <div class="first btn on"></div>
-        <div class="second btn"></div>
-        <div class="play-pause-btn" id="pause"><img src="./assets/img/pause-btn.png" alt="pause button"></div>
-      </div>
-    </main>
-
-    <section class="content-wrap news">
+    <div class="sub-img-wrap">
+    </div>
+    <div class="path-wrap">
       <div class="inner">
-        <div class="section-top">
-          <h4 class="sub-title">이화여자대학교 소식</h4>
-          <div class="title-wrap">
-            <h2 class="main-title">EWHA NEWS</h2>
-            <div class="more-btn">
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-        </div>
-        <div class="section-bottom">
-          <article>
-            <img src="./assets/img/news-img-0.jpg" alt="news thumbnail">
-            <h3>2022 중앙일보 대학평가 2년 연속 6위</h3>
-            <p>2021년에 이어 인문사회 국내논문 당 피인용 1위 유지 2022년 인문계열 평가 5위, 인문계열 순수취업률 1위 2022년 교육 여육 여건 및 
-              학생교육 및 성과에서 약진 본교는 21년 「인문사회 국내논문 당 피인용」 1위, 「순수 취업률」 5위로  2년 만에 진행된 중앙일보 평가에서 2단계 상승한 종합평가 6위를 차지한데 이어, 올해도 교육 여건 및 학생교육 성과 부문의 약진을 보이며 서울대, 연세대, 성균관대, 한양대, 고려대에 이어 2년 연속 6위를 유지했다.
-            </p>
-          </article>
-          <article>
-            <img src="./assets/img/news-img-1.jpg" alt="news thumbnail">
-            <h3>약학과 이혁진 교수, 2022년 국가연구개발 100선 중 최우수성과로 선정</h3>
-            <p>본교 약학과 이혁진 교수가 과학기술정보통신부 주관 2022 ‘국가연구개발 우수성과’ 100선 중 최우수성과 12선에 선정됐다.
-              국가연구개발 우수성과 100선은 과학기술인의 자긍심을 고취하고 국가연구개발사업의 중요성에 대해 국민 공감대를 확산하고자 2006년부터 매년 시행하고 있으며 올해로 17년째를 맞이했다.
-            </p>
-          </article>
-          <article class="mini-wrap">
-            <section class="mini">
-              <img src="./assets/img/news-img-3.jpg" alt="news thumbnail">
-              <h5>교육혁신센터 ‘THE BEST 사례공유회’ 개최</h5>
-            </section>
-            <section class="mini">
-              <img src="./assets/img/news-img-4.jpg" alt="news thumbnail">
-              <h5>자연과학대학 ‘이화 사이언스 페스티벌’ 개최</h5>
-            </section>
-            <section class="mini">
-              <img src="./assets/img/news-img-5.jpg" alt="news thumbnail">
-              <h5>'환태평양 지속가능성 대화' 국제 컨퍼런스 개최</h5>
-            </section>
-            <section class="mini">
-              <img src="./assets/img/news-img-6.jpg" alt="news thumbnail">
-              <h5>산학협력단, ‘테크-비즈 이화 2022’ 개최</h5>
-            </section>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-wrap people">
-      <section class="top">
-        <div class="right-arrow green">
-          <div class="people-info">
-            <h4>연구성과</h4>
-            <p>조소연 교수 연구성과 세계적 저널 &lt;Advanced Materials&gt;에 게재</p>
-          </div>
-          <div class="people-img"><img src="./assets/img/menu-img-1.jpg" alt="people thumbnail"></div>
-        </div>
-        <div class="right-arrow pink">
-          <div class="people-info">
-            <h4>이화 DNA_People</h4>
-            <p>NHN 페이코 이사 오보명 동문</p>
-          </div>
-          <div class="people-img"><img src="./assets/img/menu-img-2.jpg" alt="people thumbnail"></div>
-        </div>
-      </section>
-      <section class="bottom">
-        <div class="left-arrow">
-          <div class="people-img"><img src="./assets/img/menu-img-3.jpg" alt="people thumbnail"></div>
-          <div class="people-info">
-            <h4>발전기금: 기부스토리</h4>
-            <p>달란트는 타인을 위한 하나님의 위탁(피상순 동창 의학 84졸)</p>
-          </div>
-        </div>
-        <div class="left-arrow">
-          <div class="people-img"><img src="./assets/img/menu-img-4.jpg" alt="people thumbnail"></div>
-          <div class="people-info">
-            <h4>이화 DNA_History</h4>
-            <p>세계가 주목한 이화의 힘 : 글로벌 리더가 이화인에게</p>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section class="content-wrap notice">
-      <div class="inner">
-        <div class="section-top">
-          <h4 class="sub-title white">Notice & Event Information</h4>
-          <div class="title-wrap">
-            <h2 class="main-title"><img src="./assets/img/slogan-img-mini.png" alt="notice title image"></h2>
-            <div class="text-wrap">
-              <p>늘 세상의 앞에서 시대를 선도해온 이화.<br>
-                1886년 한 명의 학생으로 시작한 이후 한 세기 넘게 여성의 가능성을 넓혀온 이화는 미래의 혁신이 가져올 새로운 내일의 변화를 맨 앞에서 이끌고 있다.</p>
-            </div>
-          </div>
-        </div>
-        <div class="section-bottom">
-          <div class="notice-wrap">
-            <div class="inner-title">
-              <h4>공지사항</h4>
-              <div class="more-btn">
-                <a href="#">MORE</a>
-              </div>
-            </div>
-            <div class="notice-list">
-              <ul>
-                <li><a href="#"><span class="alert"><img src="./assets/img/notice-icon.png"
-                        alt="alert icon"></span><span class="new">N</span>[일반] [학생지원팀] 2022학년도 재학생 만족도 조사 실시
-                    안내 (11.7(월) - 11.25(금))</a></li>
-                <li><a href="#"><span class="alert"><img src="./assets/img/notice-icon.png" alt="alert icon"></span>[일반]
-                    [국제교류팀]
-                    2023학년도 2학기 파견 교환학생 선발공고(정기모집)</a></li>
-                <li><a href="#"><span class="alert"><img src="./assets/img/notice-icon.png" alt="alert icon"></span>[학사]
-                    2022학년도 전기(2023년 2월) 졸업예정여부 조회 및 졸업의사 신청 관련 안내</a></li>
-                <li><a href="#"><span class="alert"><img src="./assets/img/notice-icon.png" alt="alert icon"></span>[학사]
-                    [학부] 2022학년도 겨울 계절학기 수강안내</a></li>
-                <li><a href="#"><span class="new">N</span>[일반] [기업가센터] 겨울계절학기 스타트업 해커톤 캠프 모집(~11/18 사전신청)</a></li>
-              </ul>
-              <ul>
-                <li><a href="#"><span class="new">N</span>[입찰] [소모품/일반경쟁]이화실험동물센터/사료 연간 단가계약(1년)</a></li>
-                <li><a href="#"><span class="new">N</span>[일반] [사회봉사팀] 2022 겨울 이화봉사단 국내교육봉사 봉사단원 마지막 추가모집</a></li>
-                <li><a href="#"><span class="new">N</span>[경력] 사회복지학과 EWHA FRONTIER 10-10 사업단 박사후과정연구원 초빙공고</a></li>
-                <li><a href="#"><span class="new">N</span>[일반] 교육부 - 「교육부 청년자문단」공개모집 홍보</a></li>
-                <li><a href="#"><span class="new">N</span>[일반] [출판문화원 신간안내] <프랑스 낭만주의와 세기병></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="event-wrap">
-            <div class="inner-title">
-              <h4>11월의 행사</h4>
-              <div class="more-btn">
-                <a href="#">MORE</a>
-              </div>
-            </div>
-            <div class="event-list">
-              <ul>
-                <li class="on">
-                  <a href="#">
-                    <span class="day">Wednesday</span>
-                    <h4 class="date">16</h4>
-                    <div class="day2">Wed</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="day">Thursday</span>
-                    <h4 class="date">17</h4>
-                    <div class="day2">Thu</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="day">Friday</span>
-                    <h4 class="date">18</h4>
-                    <div class="day2">Fri</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="day">Saturday</span>
-                    <h4 class="date">19</h4>
-                    <div class="day2">Sat</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="day">Sunday</span>
-                    <h4 class="date">20</h4>
-                    <div class="day2">Sun</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="day">Monday</span>
-                    <h4 class="date">21</h4>
-                    <div class="day2">Mon</div>
-                    <p>˙자연사박물관 특별기획전 &lt;생물의 이동&gt; 초,중,고</p>
-                  </a>
-                  <div class="more-btn">
-                    <a href="#">MORE</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-wrap press">
-      <div class="inner-wrap">
-        <div class="inner">
-          <div class="img-wrap"></div>
-          <div class="text-wrap">
-            <div class="title-wrap">
-              <h4 class="on">기관/학과 소식</h4>
-              <h4>언론에 비친 이화</h4>
-            </div>
-            <div class="text-box on">
-              <p class="date">2022-11-09</p>
-              <h2>산학협력단, 2022 Seoul Tech-Marketer Olympiad 개최</h2>
-              <ul>
-                <li><a href="#">
-                    <p>본교 화공신소재공학전공 학부생들 3개 공모전에서 5개 부문 수상 쾌거</p>
-                    <span>11.07</span>
-                  </a></li>
-                <li><a href="#">
-                    <p>사회적경제협동과정, 제 4회 2022 이화 사회적경제 창업아카데미 ‘해커톤’ 개최</p>
-                    <span>10.28</span>
-                  </a></li>
-                <li><a href="#">
-                    <p>소프트웨어중심대학사업단 ‘2022 전국 여고생 프로그래밍 경진대회’성황리 개최</p>
-                    <span>10.20</span>
-                  </a></li>
-              </ul>
-              <div class="more-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-            <div class="text-box">
-              <p class="date">2022-11-16</p>
-              <h2>이화여대 캠퍼스타운, 2022 스타일테크 트렌드세미나 개최</h2>
-              <ul>
-                <li><a href="#">
-                    <p>김효근 교수 - “예술가가 걸작을 통해서 감동 주듯 기업도 소비자의 현존감을 자극해야”</p>
-                    <span>11.16</span>
-                  </a></li>
-                <li><a href="#">
-                    <p>홍영선 교수 - [독자Q&A] 당뇨병 진단 후 관리하지 않으면?</p>
-                    <span>11.16</span>
-                  </a></li>
-                <li><a href="#">
-                    <p>박원곤 교수 - [뉴스포커스] 바이든-시진핑 첫 대면회담…한중 회담 성사되나?</p>
-                    <span>11.16</span>
-                  </a></li>
-              </ul>
-              <div class="more-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-wrap sns">
-      <div class="inner">
-        <div class="section-top">
-          <h4 class="sub-title">이화여자대학교<br>소셜네트워크 서비스</h4>
-          <div class="title-wrap">
-            <h2 class="main-title">EWHA SNS</h2>
-            <ul class="sns-list">
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
-            </ul>
-            <ul class="sns-menu">
-              <li><a href="#"><img src="./assets/img/sns-icon-1-off.png" alt="sns icon"></a></li>
-              <li><a href="#"><img src="./assets/img/sns-icon-2-off.png" alt="sns icon"></a></li>
-              <li><a href="#"><img src="./assets/img/sns-icon-3-off.png" alt="sns icon"></a></li>
-              <li><a href="#"><img src="./assets/img/sns-icon-4-off.png" alt="sns icon"></a></li>
-              <li><a href="#"><img src="./assets/img/sns-icon-5-off.png" alt="sns icon"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-bottom">
-          <article class="on">
-            <div class="img-wrap">
-              <img src="./assets/img/sns-img-1.jpg" alt="sns thumbnail">
-            </div>
-            <div class="text-wrap">
-              <h3>
-                <img src="/assets/img/logo-sns-1.png" alt="sns logo">
-                <div class="title-wrap">
-                  <p>이화여자대학교 Ewha Womans University</p>
-                  <span>2022년 11월 15일</span>
-                </div>
-              </h3>
-              <p>[오늘자 이화캠] 단풍으로 물든 아름다운 캠퍼스🍁#가을스케치 #알록달록 #단풍맛집 #가을캠퍼스 #곧가을도안녕 #이화여자대학교 #이화여대 #이대 #EWHA #UNIV</p>
-              <a href="#">READ MORE</a>
-            </div>
-          </article>
-          <article class="on">
-            <div class="img-wrap">
-             <img src="./assets/img/sns-img-2.jpg" alt="sns thumbnail">
-            </div>
-            <div class="text-wrap">
-              <h3>
-                <img src="/assets/img/logo-sns-1.png" alt="sns logo">
-                <div class="title-wrap">
-                  <p>ewha.w.univ</p>
-                  <span>2022년 11월 15일</span>
-                </div>
-              </h3>
-              <p>[이화여대 대학원] 교육대학원 미술치료교육전공, 이론과 임상의 통합 교육을 실천하는 곳!
-                미술치료 이론, 임상실습 및 슈퍼비전, 미술치료 연구방법론을 통해 전문성을 갖춘 좋은 미술치료사가 되고 싶은 분들을 기다립니다. #교육대학원</p>
-                <a href="#">READ MORE</a>
-            </div>
-          </article>
-          <article class="on">
-            <div class="img-wrap">
-              <img src="./assets/img/sns-img-3.png" alt="sns thumbnail">
-            </div>
-            <div class="text-wrap">
-              <h3>
-                <img src="/assets/img/logo-sns-1.png" alt="sns logo">
-                <div class="title-wrap">
-                  <p>Ewha Womans University</p>
-                  <span>2020년 01월 09일</span>
-                </div>
-              </h5>
-              <p>언제나 시대의 맨 앞에서 변화의 문을 열어갑니다.1886년, 단 한명의 학생으로 시작한 이화는 신념과 도전으로 수많은 최초와 최고를 거듭하며 14개 단과대학, 14개 대학원, 73개 전공을 갖추고 25,000여 명의 재학생, 23만명의 동문을 보유한 세계 최대 종합여자대학으로 성장하였습니다.</p>
-            <a href="#">READ MORE</a>
-          </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-wrap short-cut">
-      <div class="inner">
-        <div class="short-cut-box">
-          <h3>EWHA<br>SHORTCUT</h3>
-          <ul>
-            <li><a href="#">교직원검색</a></li>
-            <li><a href="#">전화번호부</a></li>
-            <li><a href="#">등록금납부안내</a></li>
-            <li><a href="#">수강안내</a></li>
-            <li><a href="#">휴복학안내</a></li>
-            <li><a href="#">성적입력/이의신청</a></li>
-            <li><a href="#">EWHA WIFI</a></li>
-            <li><a href="#">이화안전생활가이드</a></li>
-            <li><a href="#">안전신문고</a></li>
-            <li><a href="#">입시부정핫라인</a></li>
+        <div class="path-box">
+          <div class="home-btn"></div>
+          <ul class="path-list">
+            <li>
+              <a href="#">입학안내</a>
+            </li>
+            <li>
+              <a href="#">대학 입학</a>
+            </li>
           </ul>
-          <div class="btn-quick-close"></div>
+          <ul class="btn-wrap">
+            <li><a href="#"><img src="./assets/img/print-icon.png" alt="icon btn"></a></li>
+            <li><a href="#"><img src="./assets/img/plus-icon.png" alt="icon btn"></a></li>
+            <li><a href="#"><img src="./assets/img/minus-icon.png" alt="icon btn"></a></li>
+            <li><a href="#"><img src="./assets/img/refresh-icon.png" alt="icon btn"></a></li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section class="content-wrap banner">
+    </div>
+    <div class="title-wrap">
       <div class="inner">
-        <div class="section-top">
-          <h4 class="sub-title">이화여자대학교 배너모음</h4>
-          <div class="title-wrap">
-            <h2 class="main-title">EWHA Banner</h2>
+        <h3>입학안내</h3>
+      </div>
+    </div>
+
+    <div class="sub-content-wrap">
+      <div class="inner">
+        <div class="con-wrap">
+          <div class="img-wrap">
+            <img src="./assets/img/admin-img.gif" alt="admin img">
+          </div>
+          <div class="text-wrap">
+            <h3>이화, 미래를 개척하는 여성 지성</h3>
+            <p class="first">
+              이화가 걸어온 길은 '최초'와 '최고'의 역사입니다.<br>
+              불가능이라 생각했던 영역에 도전해 최초와 최고의 역사를 만든 이화의 가장 큰 원동력은<br>
+              내일을 두려움 없이 함께 만들어온 이화DNA입니다.
+            </p>
+            <p>이화와 함께 변화를 이끌어갈 여러분을 기다립니다.</p>
           </div>
         </div>
-        <div class="section-bottom">
-          <article>
-            <img src="./assets/img/banner-img-1.jpg" alt="banner thumbnail">
-            <span>이화여자대학교</span>
-            <p>2023학년도 전기 전문/특수대학원 모집 안내</p>
-          </article>
-          <article>
-            <img src="./assets/img/banner-img-2.png" alt="banner thumbnail">
-            <span>인재개발원</span>
-            <p>메타버스(ZEP) 인재개발ON</p>
-          </article>
-          <article>
-            <img src="./assets/img/banner-img-3.jpg" alt="banner thumbnail">
-            <span>이화여자대학교</span>
-            <p>2022 Ewha Global Fellow 명단</p>
-          </article>
-          <article>
-            <img src="./assets/img/banner-img-4.jpg" alt="banner thumbnail">
-            <span>조형예술대학</span>
-            <p>2021 ONLINE GLOBAL 녹미전</p>
-          </article>
+        <div class="info-wrap">
+          <div class="info-box">
+            <h3>대학 입학</h3>
+            <div class="inner-box">
+              <div class="left">
+                <h4>입학팀</h4>
+                <div class="txt1">
+                  <span>전형 : 수시, 정시, 재외국민, 편입학</span>
+                  <button class="homepage-btn">홈페이지 바로가기</button>
+                </div>
+                <div class="txt2">
+                  <ul>
+                    <li>입학관 103호(평일 오전9시 ~ 오후5시)</li>
+                    <li>Tel:02-1234-5678</li>
+                    <li>admission@ewha.ac.kr</li>
+                    <li>Fax:02-123-4567</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="right">
+                <h4>국제학생팀</h4>
+                <div class="txt1">
+                  <span>전형 : International Students</span>
+                  <button class="homepage-btn">홈페이지 바로가기</button>
+                </div>
+                <div class="txt2">
+                  <ul>
+                    <li>ECC B329호 (평일 오전9시 ~ 오후5시)</li>
+                    <li>Tel:02-1234-5678</li>
+                    <li>isadmit@ewha.ac.kr</li>
+                    <li>Fax:02-123-4567</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-box">
+            <h3>일반대학원 입학</h3>
+            <div class="inner-box">
+              <div class="left">
+                <h4>대학원 행정실</h4>
+                <div class="txt1">
+                  <button class="homepage-btn">홈페이지 바로가기</button>
+                </div>
+                <div class="txt2">
+                  <ul>
+                    <li>대학원관 203호 (평일 오전 9시 ~ 오후 5시)</li>
+                    <li>Tel:02-1234-5678</li>
+                    <li>gradean@ewha.ac.kr</li>
+                    <li>Fax:02-123-4567</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="right">
+                <h4>국제학생팀</h4>
+                <div class="txt1">
+                  <button class="homepage-btn">홈페이지 바로가기</button>
+                </div>
+                <div class="txt2">
+                  <ul>
+                    <li>ECC B329호 (평일 오전9시 ~ 오후5시)</li>
+                    <li>Tel:02-1234-5678</li>
+                    <li>gradean@ewha.ac.kr</li>
+                    <li>Fax:02-123-4567</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-box tab">
+            <h3>전문·특수대학원 입학</h3>
+            <div class="inner-box">
+              <div class="left">
+                <h4>전문대학원</h4>
+                <ul>
+                  <li>국제대학원</li>
+                  <li>통역번역대학원</li>
+                  <li>경영전문대학원</li>
+                  <li>법학전문대학원</li>
+                </ul>
+              </div>
+              <div class="right">
+                <h4>국제학생팀</h4>
+                <ul>
+                  <li>교육대학원</li>
+                  <li>디자인대학원</li>
+                  <li>사회복지대학원</li>
+                  <li>신학대학원</li>
+                  <li>정책과학대학원</li>
+                  <li>공연예술대학원</li>
+                  <li>임상치의학대학원</li>
+                  <li>외국어교육특수대학원</li>
+                  <li>임상바이오헬스대학원</li>
+                  <li>데이터사이언스대학원</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <footer class="footer">
       <div class="inner">
@@ -963,6 +679,6 @@
       </div>
     </footer>
   </div>
-</body>
 
+</body>
 </html>
