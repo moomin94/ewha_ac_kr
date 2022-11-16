@@ -201,13 +201,74 @@
                 >li {
                     float: left;
                     padding: 0 30px;
-                    &:hover {
+                    &.on {
                         .sub-menu {
-                            height: 479px;
+                            height: auto;
                             padding: 45px 0;
+                        }
+                        >a {
+                            &::before {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .sub-menu {
+                            >ul {
+                                >li {
+                                    width: calc(100% / 3);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .sub-menu {
+                            >ul {
+                                >li {
+                                    width: calc(100% / 5);
+                                    &:nth-child(1){
+                                        border-right: none;
+                                    }
+                                    &:nth-child(2){
+                                        >a {
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            text-indent: -9999px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        .sub-menu {
+                            >ul {
+                                >li {
+                                    width: calc(100% / 5);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(6) {
+                        .sub-menu {
+                            >ul {
+                                >li {
+                                    width: calc(100% / 4);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(7) {
+                        .sub-menu {
+                            >ul {
+                                >li {
+                                    width: calc(100% / 6);
+                                }
+                            }
                         }
                     }
                     >a {
+                        position: relative;
                         display: inline-block;
                         padding: 35px 5px 36px;
                         font-size: 18px;
@@ -215,6 +276,21 @@
                         font-weight: 500;
                         letter-spacing: -0.7px;
                         line-height: 1;
+                        &::before {
+                            display: none;
+                            content:'';
+                            position: absolute;
+                            top: 17px;
+                            right: -8px;
+                            width: 21px;
+                            height: 18px;
+                            background: url('../assets/img/gnb-pop-icon.png') no-repeat center center;
+                        }
+                        &.on {
+                            &::before {
+                                display: block;
+                            }
+                        }
                     }
                     .sub-menu {
                         z-index: 99;
@@ -278,18 +354,16 @@
     width: 100%;
     height: 570px;
     background-color: #ffffff;
-
+    overflow: hidden;
+    cursor: pointer;
     .main-wrap {
-        width: 100%;
+        width: 400%;
         height: 100%;
-        overflow: hidden;
-        position: relative;
+        display: flex;
 
         .main-img {
-            width: 100%;
+            width: 25%;
             height: 100%;
-            position: absolute;
-            top: 0;
 
             img {
                 object-fit: cover;
@@ -297,12 +371,36 @@
                 height: 100%;
             }
 
-            &.img1 {
+            // &.img1 {
+            //     left: 0;
+            // }
+            // &.img2 {
+            //     left: 100%;
+            // }
+            // &.img3 {
+            //     left: 200%;
+            // }
+            // &.img4 {
+            //     left: 300%;
+            // }
+        }
+    }
+    .btn-wrap {
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 58px;
+            height: 59px;
+            transition: .3s ease-in-out;
+            &.prev {
                 left: 0;
+                margin: 0 8px 0 0;
+                background: rgba(0, 0, 0, 0.3) url('../assets/img/main-prev-btn.png') no-repeat center;
             }
-
-            &.img2 {
-                left: 100%;
+            &.next {
+                right: 0;
+                background: rgba(0, 0, 0, 0.3) url('../assets/img/main-next-btn.png') no-repeat center;
             }
         }
     }
@@ -328,9 +426,14 @@
             }
         }
 
-        .pause {
+        .play-pause-btn {
             margin: 3px 0 0 18px;
             cursor: pointer;
+            &#play {
+                img {
+                    content: url('../assets/img/play-btn.png');
+                }
+            }
         }
     }
 }
@@ -415,7 +518,7 @@
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
-                    word-wrap: break-wrod;
+                    word-wrap: break-word;
                     overflow: hidden;
                     font-size: 22px;
                     line-height: 30px;
@@ -435,8 +538,15 @@
                 }
 
                 p {
+                    height: 48px;
                     line-height: 25px;
                     color: #666;
+                    text-overflow: ellipsis;
+                    display: -webkit-inline-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    // word-wrap: break-word;
+                    overflow: hidden;
                 }
 
                 &.mini-wrap {
@@ -777,8 +887,7 @@
 
                     }
 
-                    &.on,
-                    &:hover {
+                    &.on {
                         padding: 24px 24px 21px;
                         background-color: $point-color;
 
@@ -1056,8 +1165,8 @@
     }
 
     &.short-cut {
-        &.on {
-            .short-cut-box {
+        .short-cut-box {
+            &.on {
                 padding: 12px 45px;
                 h3 {
                     margin-top: 15px;
@@ -1102,6 +1211,7 @@
                 li {
                     padding: 0 40px 0 0;
                     a {
+                        position: relative;
                         display: inline-block;
                         padding: 15px 10px;
                         font-size: 17px;
@@ -1109,6 +1219,21 @@
                         color: #fff;
                         font-weight: 400;
                         letter-spacing: -0.5px;
+                        &::before {
+                            display: none;
+                            content:'';
+                            position: absolute;
+                            top: -3px;
+                            right: -5px;
+                            width: 21px;
+                            height: 18px;
+                            background: url('../assets/img/gnb-pop-icon.png') no-repeat center center;
+                        }
+                        &:hover {
+                            &::before {
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
@@ -1223,6 +1348,10 @@
                     color: #999;
                     font-weight: 400;
                     letter-spacing: -0.5px;
+                    transition: .3s;
+                    &:hover {
+                        color: #333;
+                    }
                 }
             }
         }

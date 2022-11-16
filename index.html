@@ -22,12 +22,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./scss/style.css">
+  <script src="./js/common.js"></script>
 </head>
 
 <body>
   <div class="wrap">
     <div class="side-btn">
-      <div class="quick-btn on"></div>
+      <div class="quick-btn"></div>
       <div class="chat-wrap"></div>
     </div>
 
@@ -161,12 +162,289 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="#">입학안내</a></li>
-              <li><a href="#">대학˙대학원</a></li>
-              <li><a href="#">연구˙산학</a></li>
-              <li><a href="#">학사안내</a></li>
-              <li><a href="#">대학생활</a></li>
-              <li><a href="#">뉴스센터</a></li>
+              <li>
+                <a href="#">입학안내</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">대학 입학</a>
+                    </li>
+                    <li>
+                      <a href="#">일반대학원 입학</a>
+                    </li>
+                    <li>
+                      <a href="#">전문·특수대학원 입학</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">대학˙대학원</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">대학</a>
+                      <ul>
+                        <li><a href="#">인문과학대학</a></li>
+                        <li><a href="#">사회과학대학</a></li>
+                        <li><a href="#">자연과학대학</a></li>
+                        <li><a href="#">엘텍공과대학</a></li>
+                        <li><a href="#">음악대학</a></li>
+                        <li><a href="#">조형예술대학</a></li>
+                        <li><a href="#">사범대학</a></li>
+                        <li><a href="#">경영대학</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">대학</a>
+                      <ul>
+                        <li><a href="#">신산업융합대학</a></li>
+                        <li><a href="#">의과대학</a></li>
+                        <li><a href="#">간호대학</a></li>
+                        <li><a href="#">약학대학</a></li>
+                        <li><a href="#">스크랜튼대학</a></li>
+                        <li><a href="#">AI융합학부</a></li>
+                        <li><a href="#">호크마교양대학</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">일반대학원</a>
+                      <ul>
+                        <li><a href="#">인문사회계열</a></li>
+                        <li><a href="#">자연과학계열</a></li>
+                        <li><a href="#">공학계열</a></li>
+                        <li><a href="#">예체능계열</a></li>
+                        <li><a href="#">의학계열</a></li>
+                        <li><a href="#">학과간협동과정</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">전문대학원</a>
+                      <ul>
+                        <li><a href="#">국제대학원</a></li>
+                        <li><a href="#">통역번역대학원</a></li>
+                        <li><a href="#">경영전문대학원</a></li>
+                        <li><a href="#">법학전문대학원</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">특수대학원</a>
+                      <ul>
+                        <li><a href="#">교육대학원</a></li>
+                        <li><a href="#">디자인대학원</a></li>
+                        <li><a href="#">사회복지대학원</a></li>
+                        <li><a href="#">신학대학원</a></li>
+                        <li><a href="#">정책과학대학원</a></li>
+                        <li><a href="#">공연예술대학원</a></li>
+                        <li><a href="#">임상바이오헬스대학원</a></li>
+                        <li><a href="#">임상치의학대학원</a></li>
+                        <li><a href="#">외국어교육특수대학원</a></li>
+                        <li><a href="#">데이터사이언스대학원</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">연구˙산학</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">연구처/산학협력단 안내</a>
+                    </li>
+                    <li>
+                      <a href="#">연구자 정보(PURE)</a>
+                    </li>
+                    <li>
+                      <a href="#">연구성과</a>
+                    </li>
+                    <li>
+                      <a href="#">연구소식</a>
+                    </li>
+                    <li>
+                      <a href="#">연구기관</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">학사안내</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">학사일정</a>
+                      <ul>
+                        <li><a href="#">2023</a></li>
+                        <li><a href="#">2022</a></li>
+                        <li><a href="#">2021</a></li>
+                        <li><a href="#">2020</a></li>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2017</a></li>
+                        <li><a href="#">2016</a></li>
+                        <li><a href="#">2015</a></li>
+                        <li><a href="#">2014</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">학사정보</a>
+                      <ul>
+                        <li><a href="#">등록</a></li>
+                        <li><a href="#">학적변동</a></li>
+                        <li><a href="#">전공선택</a></li>
+                        <li><a href="#">수강</a></li>
+                        <li><a href="#">성적</a></li>
+                        <li><a href="#">학점인정</a></li>
+                        <li><a href="#">졸업</a></li>
+                        <li><a href="#">교원자격증</a></li>
+                        <li><a href="#">평생교육사자격증</a></li>
+                        <li><a href="#">학·석사 연계과정</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">장학</a>
+                      <ul>
+                        <li><a href="#">장학일정</a></li>
+                        <li><a href="#">장학공지</a></li>
+                        <li><a href="#">장학금 안내</a></li>
+                        <li><a href="#">장학FAQ</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">교과과정</a>
+                      <ul>
+                        <li><a href="#">교과과정 및 교과목 소개</a></li>
+                        <li><a href="#">전공별 교과과정 보기</a></li>
+                        <li><a href="#">외국인학생 예외사항</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">강의시간표/계획안</a>
+                      <ul>
+                        <li><a href="#">학부</a></li>
+                        <li><a href="#">대학원</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">국제교류 프로그램</a>
+                      <ul>
+                        <li><a href="#">교환학생</a></li>
+                        <li><a href="#">해외학습</a></li>
+                        <li><a href="#">단기특별교류</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">증명발급</a>
+                      <ul>
+                        <li><a href="#">증명발급안내</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">대학생활</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">학생활동</a>
+                      <ul>
+                        <li><a href="#">학생단체 활동 가이드</a></li>
+                        <li><a href="#">학생회</a></li>
+                        <li><a href="#">중앙동아리</a></li>
+                        <li><a href="#">서포터즈</a></li>
+                        <li><a href="#">언론활동</a></li>
+                        <li><a href="#">사회봉사</a></li>
+                        <li><a href="#">멘토링</a></li>
+                        <li><a href="#">이화 ROTC</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">학사정보</a>
+                      <ul>
+                        <li><a href="#">취업/현장실습지원</a></li>
+                        <li><a href="#">학술지원</a></li>
+                        <li><a href="#">행사지원</a></li>
+                        <li><a href="#">상담지원</a></li>
+                        <li><a href="#">고시지원</a></li>
+                        <li><a href="#">장애학생지원</a></li>
+                        <li><a href="#">북한이탈주민학생지원</a></li>
+                        <li><a href="#">학생증 발급</a></li>
+                        <li><a href="#">기타서비스</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">생활지원</a>
+                      <ul>
+                        <li><a href="#">식당</a></li>
+                        <li><a href="#">기숙사</a></li>
+                        <li><a href="#">휘트니스/체육시설</a></li>
+                        <li><a href="#">편의시설</a></li>
+                        <li><a href="#">대학건강센터</a></li>
+                        <li><a href="#">기도실</a></li>
+                        <li><a href="#">수련관</a></li>
+                        <li><a href="#">공간사용안내</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">IT/기술지원</a>
+                      <ul>
+                        <li><a href="#">메일</a></li>
+                        <li><a href="#">네트워크/DNS</a></li>
+                        <li><a href="#">홈페이지</a></li>
+                        <li><a href="#">이화앱</a></li>
+                        <li><a href="#">공용소프트웨어</a></li>
+                        <li><a href="#">노트북</a></li>
+                        <li><a href="#">개방실습실</a></li>
+                        <li><a href="#">IT One-Stop 서비스</a></li>
+                        <li><a href="#">강의실 기술지원</a></li>
+                        <li><a href="#">IT FAQ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">뉴스센터</a>
+                <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">이화뉴스</a>
+                    </li>
+                    <li>
+                      <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                      <a href="#">행사/소식</a>
+                      <ul>
+                        <li><a href="#">행사안내</a></li>
+                        <li><a href="#">기관/학과 소식</a></li>
+                        <li><a href="#">언론에 비친 이화</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">이화 DNA</a>
+                      <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">기부스토리</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">이화 홍보</a>
+                      <ul>
+                        <li><a href="#">홍보영상 라이브러리</a></li>
+                        <li><a href="#">홍보책자</a></li>
+                        <li><a href="#">이화소식지</a></li>
+                        <li><a href="#">Ewha SPOTLIGHT</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">이화 포토</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </nav>
         </div>
@@ -175,17 +453,27 @@
 
     <main class="main">
       <div class="main-wrap">
-        <div class="main-img img1">
+        <div class="main-img img1" id="last-clone">
           <img src="./assets/img/main-img-1.jpg" alt="main image">
         </div>
         <div class="main-img img2">
           <img src="./assets/img/main-img-2.jpg" alt="main image">
         </div>
+        <div class="main-img img3">
+          <img src="./assets/img/main-img-1.jpg" alt="main image">
+        </div>
+        <div class="main-img img4" id="first-clone">
+          <img src="./assets/img/main-img-2.jpg" alt="main image">
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <div class="prev btn"></div>
+        <div class="next btn"></div>
       </div>
       <div class="pagination">
-        <div class="prev btn on"></div>
-        <div class="next btn"></div>
-        <div class="pause"><img src="./assets/img/pause-btn.png" alt="pause button"></div>
+        <div class="first btn on"></div>
+        <div class="second btn"></div>
+        <div class="play-pause-btn" id="pause"><img src="./assets/img/pause-btn.png" alt="pause button"></div>
       </div>
     </main>
 
@@ -202,14 +490,18 @@
         </div>
         <div class="section-bottom">
           <article>
-            <img src="./assets/img/news-img-1.jpg" alt="news thumbnail">
+            <img src="./assets/img/news-img-0.jpg" alt="news thumbnail">
             <h3>2022 중앙일보 대학평가 2년 연속 6위</h3>
-            <p>2021년에 이어 인문사회 국내논문 당 피인용 1위 유지 2022년 인문계열 평가 5위, 인문계열 순수취업률 1위 2022년 교육 여</p>
+            <p>2021년에 이어 인문사회 국내논문 당 피인용 1위 유지 2022년 인문계열 평가 5위, 인문계열 순수취업률 1위 2022년 교육 여육 여건 및 
+              학생교육 및 성과에서 약진 본교는 21년 「인문사회 국내논문 당 피인용」 1위, 「순수 취업률」 5위로  2년 만에 진행된 중앙일보 평가에서 2단계 상승한 종합평가 6위를 차지한데 이어, 올해도 교육 여건 및 학생교육 성과 부문의 약진을 보이며 서울대, 연세대, 성균관대, 한양대, 고려대에 이어 2년 연속 6위를 유지했다.
+            </p>
           </article>
           <article>
-            <img src="./assets/img/news-img-2.jpg" alt="news thumbnail">
+            <img src="./assets/img/news-img-1.jpg" alt="news thumbnail">
             <h3>약학과 이혁진 교수, 2022년 국가연구개발 100선 중 최우수성과로 선정</h3>
-            <p>2021년에 이어 인문사회 국내논문 당 피인용 1위 유지 2022년 인문계열 평가 5위, 인문계열 순수취업률 1위 2022년 교육 여</p>
+            <p>본교 약학과 이혁진 교수가 과학기술정보통신부 주관 2022 ‘국가연구개발 우수성과’ 100선 중 최우수성과 12선에 선정됐다.
+              국가연구개발 우수성과 100선은 과학기술인의 자긍심을 고취하고 국가연구개발사업의 중요성에 대해 국민 공감대를 확산하고자 2006년부터 매년 시행하고 있으며 올해로 17년째를 맞이했다.
+            </p>
           </article>
           <article class="mini-wrap">
             <section class="mini">
@@ -558,7 +850,7 @@
 
     <footer class="footer">
       <div class="inner">
-        <div class="footer-quick-box on">
+        <div class="footer-quick-box">
           <h4 class="sub-title">EHWA QUICK SERVICE</h4>
           <ul>
             <li><a href="#">포탈정보시스템</a></li>
@@ -601,7 +893,7 @@
             <p class="copyright">COPYRIGHT 2020 BY EWHA WOMANS UNIVERSITY. ALL RIGHTS RESERVED.</p>
           </div>
           <div class="go-btn-wrap">
-            <div class="go-btn bachelor on">
+            <div class="go-btn bachelor">
               <p>대학 바로가기</p>
               <span>GO</span>
               <ul>
