@@ -287,6 +287,9 @@ input {
   font-weight: 500;
 }
 
+.header {
+  z-index: 99;
+}
 .header .header-bottom {
   position: relative;
   width: 100%;
@@ -528,22 +531,68 @@ input {
   background: url("../assets/img/home-icon.png") no-repeat center;
   background-color: #333;
 }
-.path-wrap .path-box ul {
+.path-wrap .path-box > ul {
   display: flex;
 }
 .path-wrap .path-box .path-list {
   border: 1px solid #ddd;
   width: calc(100% - 50px - 194px);
 }
-.path-wrap .path-box .path-list li {
-  border-right: 1px solid #ddd;
+.path-wrap .path-box .path-list > li {
+  position: relative;
   width: 250px;
 }
-.path-wrap .path-box .path-list li a {
+.path-wrap .path-box .path-list > li > a {
+  position: relative;
   display: inline-block;
   width: 100%;
-  padding: 17px 34px 17px 24px;
+  border-right: 1px solid #ddd;
+  padding: 16.5px 34px 16.5px 24px;
   background: url("../assets/img/ico-path-open.png") no-repeat right 19px center;
+  background-color: #fff;
+}
+.path-wrap .path-box .path-list > li ul {
+  opacity: 0;
+  visibility: hidden;
+  min-height: 0;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 201px;
+  padding: 0 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-sizing: content-box;
+  transition: 0.5s;
+}
+.path-wrap .path-box .path-list > li ul.on {
+  opacity: 1;
+  visibility: visible;
+  padding: 18px 24px;
+}
+.path-wrap .path-box .path-list > li ul li {
+  padding: 0 0 9px 0;
+}
+.path-wrap .path-box .path-list > li ul li:last-child {
+  padding: 0;
+}
+.path-wrap .path-box .path-list > li ul li a {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+.path-wrap .path-box .path-list > li ul li a.on {
+  color: #013775;
+  text-decoration: underline;
+}
+.path-wrap .path-box .path-list > li ul li a.on:hover {
+  color: #013775;
+  font-weight: 500;
+}
+.path-wrap .path-box .path-list > li ul li a:hover {
+  color: #333;
+  font-weight: 500;
+  text-decoration: underline;
 }
 .path-wrap .path-box .btn-wrap {
   width: 194px;
